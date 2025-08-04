@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_tng01</title>
+</head>
+<body>
+  <h1>회원가입을 환영합니다</h1>
+  <form action="">
+    <fieldset>
+      <legend>사용자 정보</legend>
+        <ul>
+          <li><label for=""></label>
+            <input type="text" name="account" id="account" min="4" max="10" placeholder="4자 ~ 10자 사이, 공백없이">
+          </li>  
+          <li>이메일
+            <input type="email" name="email" id="email">
+            <label for="email">이메일</label>
+          </li>
+          <li>비밀번호
+            <input type="text" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
+          </li>
+          <li>비밀번호 확인
+            <input type="text" name="check" id="check">
+          </li>
+          <li>가입 경로
+            <select name="route" id="route">
+              <option value="기타">기타</option>
+            </select>
+          </li>
+          <li>메모
+            <textarea name="note" id="note" cols="30" rows="10">남길 말씀이 있다면 여기에</textarea>
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <input type="radio" name="recep" id="recep">
+      <label for="sent">메일 수신</label>
+      <input type="radio" name="no recep" id="no recep">
+      <label for="not sent">메일 수신 안 함</label>
+    </fieldset>
+    <button type="button">가입하기</button>
+    <button type="button">취소</button>
+  </form>
+</body>
+</html>

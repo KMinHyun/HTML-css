@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormTag</title>
+</head>
+<body>
+  <!-- form 태그 : 정보를 제출하기 위해 범위를 지정하는 역할을 함.(=유저한테 입력값을 받기 위해 사용하는 태그) -->
+  <!-- action : 요청을 받아야 하는 주소(=요청을 보낼 주소) -->
+  <form action="">
+    <fieldset>
+      <legend>연습</legend>
+      <!-- input : 데이터를 입력 받는 태그. -->
+      <!-- placeholder : 해당 란에 설명을 적을 수 있음. -->
+      <!-- label을 설정하면 포커스가 해당 id로 이동, for 속성값과 연결하고자 하는 인풋의 id 값을 일치시키면 됨. -->
+      <label for="email">이메일 : </label>
+      <!-- <input type="text" name="" placeholder="email을 적어주세요."> -->
+      <input type="email" name="" placeholder="email을 적어주세요." required>
+      <!-- 이메일을 적어야 하는 경우 타입을 이메일로 하는 게 좋음. -->
+      <!-- required : 필수 항목으로 지정해서 입력해야 넘어가도록 설정할 때 사용. -->
+      <input type="email" name="" placeholder="email을 적어주세요." required minlength="8">
+       <!-- minlength : 인풋 타입을 텍스트로 했을 때 최소 글자 설정할 때 사용. -->
+      <br>
+      <label for="password">비밀번호</label>
+      <input type="password" name="" id="">
+
+    </fieldset>
+    <fieldset>
+      <input type="number" min="1" max="50">
+      <input type="date">
+      <br>
+      <input type="checkbox" name="foods" id="banana">
+      <!-- <input type="checkbox" name="foods" id="banana" checked> checked를 넣으면 자동으로 체크해줌. -->
+      <label for="banana">바나나</label>
+      <input type="checkbox" name="foods" id="apple">
+      <label for="apple">사과</label>
+      <br>
+      <!-- 타입 radio는 하나만 선택되게 할 수 있음. -->
+      <input type="radio" name="animals" id="dog">
+      <label for="dog">강아지</label>
+      <input type="radio" name="animals" id="cat">
+      <label for="cat">고양이</label>
+      <br>
+      <select name="poketmon" id="poketmon">
+        <option value="0">피카츄</option>
+        <!-- value의 값은 개발자가 알아보기 쉬운 걸로 설정하는 게 일반적이지만 성능을 올리려면 코드화해서 값을 최소화하기도 함. -->
+        <option value="1">라이츄</option>
+        <option value="2">파이리</option>
+        <option value="3" selected>리자드</option>
+      </select>
+      <br>
+      <input type="hidden" name="test" value="0">
+      <br>
+      <textarea name="" id="" cols="10" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">전송</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+  </form>
+</body>
+</html>
