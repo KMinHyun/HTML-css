@@ -11,17 +11,16 @@
     <fieldset>
       <legend>사용자 정보</legend>
         <ul>
-          <li><label for=""></label>
+          <li><label for="account">아이디</label>
             <input type="text" name="account" id="account" min="4" max="10" placeholder="4자 ~ 10자 사이, 공백없이">
           </li>  
-          <li>이메일
+          <li><label for="email">이메일</label>
             <input type="email" name="email" id="email">
-            <label for="email">이메일</label>
           </li>
-          <li>비밀번호
+          <li><label for="password">비밀번호</label>
             <input type="text" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
           </li>
-          <li>비밀번호 확인
+          <li><label for="check">비밀번호 확인</label>
             <input type="text" name="check" id="check">
           </li>
           <li>가입 경로
@@ -29,7 +28,7 @@
               <option value="기타">기타</option>
             </select>
           </li>
-          <li>메모
+          <li><label for="note">메모</label>
             <textarea name="note" id="note" cols="30" rows="10">남길 말씀이 있다면 여기에</textarea>
           </li>
         </ul>
@@ -37,9 +36,9 @@
     <fieldset>
       <legend>이벤트와 새로운 소식</legend>
       <input type="radio" name="recep" id="recep">
-      <label for="sent">메일 수신</label>
-      <input type="radio" name="no recep" id="no recep">
-      <label for="not sent">메일 수신 안 함</label>
+      <label for="recep">메일 수신</label>
+      <input type="radio" name="no recep" id="no recep" checked>
+      <label for="no recep">메일 수신 안 함</label>
     </fieldset>
     <button type="button">가입하기</button>
     <button type="button">취소</button>
