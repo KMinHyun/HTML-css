@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+		table, td, th {
+			border: 1px solid #ccc;
+		}
+		td, th {
+			padding: 10px 20px;
+		}
+		td:last-child {
+			width: 200px;
+		}
+</style>
+</head>
+<body>
+  <!-- table 태그 : 표를 만드는 태그. 표 전체를 감싸는 부모 태그. -->
+   <!-- tr 태그 : 표의 행(row)을 나타냄. -->
+    <!-- td 태그 : 표의 열(column)을 나타냄. -->
+     <!-- th 태그 : 표의 제목 열(column)을 나타냄. -->
+  <table>
+    <!-- caption 태그 : 표 자체의 제목 또는 설명을 작성. -->
+     <caption>성적표</caption>
+     <!-- thead, tbody, tfoot 태그 : 테이블의 구조를 좀 더 명확하게 하기 위한 태그. 구분의 기준이 명확하진 않으나 내부적으로 구분하기 위함. -->
+    <thead>
+     <tr>
+        <th>반</th>
+        <th>이름</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+        <th>과학</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">1반</td>
+        <td>홍길동</td>
+        <td>70점</td>
+        <td>80점</td>
+        <td>90점</td>
+        <td>100점</td>
+      </tr>
+      <tr>
+        <td>둘리</td>
+        <td>75점</td>
+        <td>85점</td>
+        <td>95점</td>
+        <td>90점</td>
+    </tbody>
+    <tfoot>
+      </tr>
+        <td colspan="2">평균</td>
+        <td>70점</td>
+        <td>80점</td>
+        <td>90점</td>
+        <td>85점</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
