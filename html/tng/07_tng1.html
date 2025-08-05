@@ -11,36 +11,47 @@
     <fieldset>
       <legend>사용자 정보</legend>
         <ul>
-          <li><label for="account">아이디</label>
+          <li>
+            <!-- span : 특별히 의미 없는 문자를 마크업하고 싶을 때 사용. -->
+            <span>ⓐ</span>
+            <label for="account">아이디</label>
             <input type="text" name="account" id="account" min="4" max="10" placeholder="4자 ~ 10자 사이, 공백없이">
           </li>  
           <li><label for="email">이메일</label>
             <input type="email" name="email" id="email">
           </li>
-          <li><label for="password">비밀번호</label>
-            <input type="text" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
+          <li>
+            <label for="password">비밀번호</label>
+            <input
+             type="text"
+             name="password" id="password"
+             placeholder="문자와 숫자, 특수 기호 포함"
+            >
+            <!-- 코드가 너무 길어지면 개행 이용하기. -->
           </li>
           <li><label for="check">비밀번호 확인</label>
             <input type="text" name="check" id="check">
           </li>
           <li>가입 경로
             <select name="route" id="route">
-              <option value="기타">기타</option>
+              <option value="etc">기타</option>
             </select>
           </li>
           <li><label for="note">메모</label>
-            <textarea name="note" id="note" cols="30" rows="10">남길 말씀이 있다면 여기에</textarea>
+            <textarea name="note" id="note" cols="30" rows="10" placeholder="남길 말씀이 있다면 여기에"></textarea>
           </li>
         </ul>
     </fieldset>
     <fieldset>
       <legend>이벤트와 새로운 소식</legend>
+      <!-- 같은 카테고리니까 네임 같게. -->
       <input type="radio" name="recep" id="recep">
       <label for="recep">메일 수신</label>
-      <input type="radio" name="no recep" id="no recep" checked>
+      <input type="radio" name="recep" id="no recep" checked>
       <label for="no recep">메일 수신 안 함</label>
     </fieldset>
-    <button type="button">가입하기</button>
+    <!-- input으로 버튼을 넣을 수 있지만 오래된 방식임. css로 제어하기 불편한 상황이 생길 수 있음. -->
+    <button type="submit">가입하기</button>
     <button type="button">취소</button>
   </form>
 </body>
