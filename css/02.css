@@ -1,0 +1,17 @@
+h1 {
+  color: brown !important;
+}
+
+h1 {
+  color: blue;
+}
+/* important가 우선순위가 제일 높아서 거의 사용 안 함. important가 두 번 들어가면 코드 관리가 매우 어려워짐. */
+
+#id-h1 {
+  color: turquoise;
+}
+/* 인라인 스타일도 잘 안 씀. 마찬가지로 코드 관리가 어려워짐. */
+
+.class-h1 {
+  color: yellow;
+}

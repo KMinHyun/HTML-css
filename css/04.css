@@ -1,0 +1,12 @@
+.food-list {
+  /* list-style-type : 불릿(목록의 번호) 스타일을 지정.*/
+  list-style-type: disc;
+  /* list-style-position : 목록의 들여쓰기 여부 지정. outside가 기본. */
+  list-style-position: outside;
+  /* list-style-image: 불릿을 이미지로 대체하고 싶을 때. url(이미지 경로). 이미지 크기 조절을 해줘야 함. */
+  list-style-image: url(../img/images.webp);
+  }
+
+  .food1 {
+    list-style-image: url(../img/다운로드.jfif);
+  }

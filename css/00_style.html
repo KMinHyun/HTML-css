@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>00_style</title>
+  <!-- 내부 스타일 방식일 땐 아래처럼 코드 작성 -->
+  <style>
+    h1 {
+      color: blueviolet;
+      /* 일반적으로 헥스(Hex) 코드로 색깔을 사용 */
+    }
+  </style>
+  <!-- 외부 스타일 방식일 땐 아래처럼 파일 불러오기 -->
+  <link rel="stylesheet" href="./00.css">
+  <!-- href 주소를 가져올 건데 그게 rel로 적은 이름의 파일이다 -->
+</head>
+<body>
+  <!-- 인라인 스타일 : 요소 내부에 스타일을 줌.-->
+  <h1 style="color: red;">인라인 스타일</h1>
+
+  <!-- 내부 스타일 : head 안에 스타일을 줌. selector를 사용해야 함. -->
+   <h1>내부 스타일</h1>
+
+  <!-- 외부 스타일 : css 파일을 따로 만들어줌. head 태그 안에 링크 태그를 사용해야 함. -->
+   <h2>외부 스타일</h2>
+</body>
+</html>
