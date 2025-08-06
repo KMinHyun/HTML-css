@@ -1,0 +1,28 @@
+.div-border-style {
+  /* border-style은 테두리 형태를 지정하는 스타일. */
+  border-style: solid;
+
+  /* border-width은 테두리 두깨를 나타냄.
+      1개 지정 시 : 테두리 전부 적용
+      2개 지정 시 : 상하, 좌우 적용
+      3개 지정 시 : 상, 좌우, 하 적용
+      4개 지정 시 : 상, 우, 하, 좌 적용 */
+  border-width: 1px;
+  /* ex) border-width: 5px 10px;
+        border-width: 5px 10px 15px; */
+
+  /* border-color : 테두리 색 지정 */
+  border-color: gold;
+}
+
+.div-border-style {
+  /* border: 테두리의 두께, 속성, 색상을 한번에 지정함. */
+  border: 5px solid #daa520;
+
+  /* border-radius : 테두리의 모서리를 둥글게 처리함.
+      크기가 커질수록 모서리를 많이 깎아서 둥글어짐. */
+  border-radius: 10px;
+  border-radius: 5px 10px;
+  border-top-left-radius: 10px;
+  /* 필요에 따라서 특정 모서리만 깎을 수도 있음. */
+}

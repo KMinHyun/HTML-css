@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.div {
+  border: 1px solid #000000;
+}
+
+.div-box {
+  display: inline;
+}
+
+.div-box {
+  width: 100px;
+}
+/* block 레벨 요소
+    1. 혼자 한 줄을 다 차지함.
+    2. 크기는 조절이 가능함.
+    3. 크기를 조절해서 위로 올라갈 공간이 생긴 거처럼 보여도 올라가지 않고 무조건 아래에 형성됨. */
+span { 
+  display: inline-block;
+  width: 100px;
+}
+/* inline 레벨 요소
+    1. 콘텐츠 크기만큼만 영역이 고정됨.
+    2. 크기 조절이 안 됨. width가 적용이 안 됨.
+    3. 공간이 충분하면 그 공간으로 옮길 수 있음. */
+
+/* 한 줄에 여러 영역을 두면서 크기 조절을 하고 싶다면 display: inline-block을 넣어줌. */
+span {
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* box-sizing은 보통 전체 선택자 또는 바디에 넣음. */
+
+span {
+  width: 100vw;
+  /* vw는 view width의 약자로 ,view는 화면을 말하는데, 화면 넓이만큼의 크기로 설정함.
+    최대가 100이고 퍼센트 단위임.*/
+  height: 50vh;
+  /* vh는 view height의 약자고 vw와 마찬가지로 높이를 화면 높이만큼 설정함. */
+}
+
+.div-parent {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  /* padding 또한 상하좌우 각각 조절이 가능함. */
+  margin: 10px;
+  /* margin도 상하좌우 각각 조절 가능. */
+  /* margin: 10px auto; 좌우를 auto로 설정하면 가운데 정렬한 거처럼 만들 수 있음. */
+}
+
+.div-child {
+  border:  1px solid #ff9900;
+  width: 50vw;
+  min-width: 400px;
+  /* %와 viewport의 차이는 %는 부모 요소의 크기에 따라 비율로 설정되고
+     뷰포트는 화면의 크기에 따라 비율로 설정됨.*/
+}
+
+.div-margin {
+  margin: 20px;
+  background-color: #00ffff;
+  box-shadow: 5px 5px 5px 5px #00a2ff inset;
+  /* 수평 거리, 수직 거리, 흐림 정도, 번짐 정도, 색상, 그림자 방향 순으로 설정 가능. */
+}
