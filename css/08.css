@@ -1,0 +1,44 @@
+div {
+  padding: 20px;
+}
+.main {
+  background-color: #bb0c78;
+  width: 200px;
+}
+.div-static {
+  background-color: #fff;
+  border: 1px solid #000;
+  position: static;
+}
+.div-relative {
+  background-color: aquamarine;
+  position: relative;
+  /* relative는 기본적으로 요소 배치 기준이 static과도 같다.
+    자신의 원래 위치를 기준으로 위치 지정이 가능하다.
+    자식 요소들 중에 absolute로 지정된 요소가 있다면 relative요소가 기준점이 된다.*/
+   top: -20px;
+   left: 20px;
+}
+.div-absolute {
+  background-color: chocolate;
+  position: absolute;
+  /* absolute를 주면 기존 레이아웃에서 벗어나서 붕 떠버림. */
+  top: 0;
+  /* absolute는 나의 상위 요소 중 relative가 지정된 요소를 기준으로 움직임. 
+    상위 요소 중에 relative가 없으면 body가 기준이 됨.
+    상위 요소 중에 relative가 여러 개면 바로 위에 있는 거를 기준으로 움직임.*/
+}
+
+.div-fixed {
+  background-color: blue;
+  position: fixed;
+  /* 앱솔루트랑 차이점은 fixed는 뷰포트를 기준으로 하여 움직임. */
+  right: 20%;
+  bottom: 20%;
+}
+.div-sticky {
+  background-color: beige;
+  position: sticky;
+  top: 0;
+  /* 화면 밖을 벗어나도 위치가 지정한 곳에 고정됨. */
+}

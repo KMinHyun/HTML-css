@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.headerInfo {
+  color: #f4a460;
+}
+
+/* Main */
+.main-title {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.main-box-base {
+  padding: 20px;
+  border: 1px solid #5f5252;
+  text-align: center;
+}
+
+.main-contents {
+  
+}
+
+.main-counsel {
+  
+}
+
+.main-sub-title {
+  margin-bottom: 20px;
+  color: red;
+}
+
+.main-word-highlight {
+  color: #0000ff;
+}
+
+.main-contents-big-bold {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.main-contents-margin-bottom {
+  margin-bottom: 20px;
+}

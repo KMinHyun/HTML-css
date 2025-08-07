@@ -1,0 +1,16 @@
+.img-float {
+  float: left;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+  width: 70px;
+  height: 50px;
+  background-color: skyblue;
+  text-align: center;
+  line-height: 50px;
+}
