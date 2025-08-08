@@ -1,0 +1,59 @@
+.background-test1 {
+  padding: 10px;
+  background-color: #2aafa9;
+  border: 3px dotted #000000;
+  /* 배경색은 기본적으로 border 영역까지 색이 입혀짐. */
+  background-clip: padding-box;
+  background-clip: content-box;
+}
+
+.divBgImg {
+  border: 3px solid red;
+  width: 1000px;
+  height: 1000px;
+  background-image: url(../img/images.webp), url(../img/다운로드.jfif);
+  /* 앞에 파일이 없으면 콤마로 대체 파일을 불러오겠단 명령어를 넣을 수 있음.
+    단, 둘 다 불러오는 방식이고 우선순위가 위인 앞에 거를 먼저 불러오기 때문에 배경이 투명인 png파일은
+    잘 보면서 써야 함. */
+  background-size: contain;
+  background-size: cover;
+  background-size: 200px;
+  /* 배경 이미지의 크기를 조절함. 기본이 auto고 이미지 자체 크기로 나옴.
+    contain은 width나 height가 먼저 꽉 차면 더 안 커지는데
+    cover는 둘 다 꽉 채울 때까지 커진다. */
+    background-repeat: repeat;
+    /* 바둑판 배열 */
+    background-repeat: repeat-x;
+    /* 가로로만 반복되게 함. 세로로만 반복되게 하려면 repeat-y */
+    background-repeat: space;
+    /* 가로 끝과 세로 끝에 맞춰서 반복함. */
+    background-repeat: round;
+    /* background-size를 조절해서 빈공간없이 사진이 꽉 차게 나오게 만듦. */
+    background-repeat: no-repeat;
+    /* 반복 없애기. */
+  /* background-repeat는 배경 이미지의 반복 방법 조절함. */
+    background-position: center;
+    background-position: top 0 right 0;
+  /* background-position은 배경 이미지의 위치를 조절함. */
+}
+
+body {
+  background-image: url(../img/logo-mysql-170x115.png);
+  background-attachment: fixed;
+  /* background-attachment는 스크롤이 생길 경우 배경에 이미지를 고정시킴. */
+}
+
+.div-gradation {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(#000, #fff);
+  background: linear-gradient(45deg, #000, #fff 20%, blue, aqua);
+/* 선형 그라데이션 */
+/* 색상의 위치를 조절하고 싶으면 색상 옆에 퍼센트를 입력해줌. */
+/* 각도와 방향도 조절할 수 있음. 맨 앞에 ,방향의 경우 to 방향, 적어주면 됨. */
+  background: radial-gradient(#000, #fff );
+  /* 원형 그라데이션 */
+  background: radial-gradient(circle, #000 #fff);
+  background: radial-gradient(circle at 0% 50%, #000 #fff);
+  /* 색깔 앞에 circle을 주면 안 찌그러지고 원을 유지함. */
+}

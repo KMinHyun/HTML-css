@@ -1,0 +1,85 @@
+/* 고오급 선택자 
+
+(1) 후손 결합자 : 부모 요소의 영역 내에 있는 요소를 선택하는 방법
+    공백을 구분자로 요소를 선택함. */
+header span {
+  color: skyblue;
+}
+/* (2) 자식 결합자 : 부모 요소의 바로 아래 자식 요소만 선택함.
+      '>'를 구분자로 요소를 선택함. */
+header > span {
+  color: rgb(255, 102, 0);
+}
+/* (3) 인접 형제 결합자 : 첫번째 선택자 요소의 바로 인접한 형제 요소를 선택함.
+      '+'를 구분자로 선택함. */
+header + span {
+  color: green;
+}      
+/* (4) 일반 형제 결합자 : 첫번째 선택자 요소 이후에 나오는 모든 형제 요소를 선택함.
+      '~'를 구분자로 씀. */
+header ~ p {
+  color: blueviolet;
+}
+/* (5) 속성 선택자-잘 안 씀- : 요소의 속성을 이용하여 특정 요소를 선택함. 
+      [속성명] : 특정 속성이 있는 요소를 선택 */
+[href] {
+  font-size: 30px;  
+}
+/* (6) 가상 선택자 : 요소의 상태에 따라 요소를 선택함.
+      a 태그의 경우 그 사이트를 방문한 상태와 하지 않은 상태와 같이 나뉘어짐.
+      '선택하고자 하는 선택자:가상클래스명'= 기본형태 */
+      /* link : 아직 방문하지 않은 링크 요소 선택함.  */
+a:link {
+  color: brown;
+}
+      /* visited : 방문한 링크 요소를 선택함. */
+a:visited {
+  color: burlywood;
+}
+      /* hover : 마우스 커서가 올라가 있는 요소를 선택함. */
+a:hover {
+  font-size: 1.5rem;
+}
+      /* active : 클릭 중인(꾹 누르고 있는) 요소를 선택함. */
+a:active {
+  background-color: aquamarine;
+}
+/* focus : 포커스가 적용되어 있는 요소를 선택함. 
+  input의 경우 자체적으로 외곽선이 있기 때문에 지워줘야 함.*/
+input {
+  outline: none;
+}
+input:focus {
+  border: 3px solid #cf1d1d;
+}
+/* checked : 체크된 상태의 요소를 모두 선택함. */
+input:checked + label {
+  background-color: blue;
+}
+/* not (선택자) : '()'의 선택자 요소를 제외한 나머지 요소에 스타일을 적용함. */
+header :not(span) {
+  background-color: #c07070;
+}
+/* :nth-child(숫자) : 내가 지정한 숫자번째의 자식요소를 선택함. */
+.container :nth-child(3) {
+  background-color: #c07070;
+}
+/* :nth-child(n + 숫자) : 내가 지정한 숫자번째의 자식 요소부터 그 뒤에 자식요소 모두 선택함. */
+.container :nth-child(n + 3) {
+  background-color: aliceblue;
+}
+/* :nth-child(-n + 숫자) : 내가 지정한 숫자번째의 자식 요소부터 그 앞에 자식요소 모두 선택함. */
+.container :nth-child(-n + 3) {
+  background-color: aliceblue;
+}
+.container :nth-child(n + 3):nth-child(-n + 5) {
+  background-color: #cf1d1d;
+}
+/* :nth-child(odd | even) : 자식요소 중에 홀수 또는 짝수번째 요소를 선택함. */
+.container :nth-child(odd) {
+  color: blue;
+}
+/* 선택자:nth-of-type(숫자) : 자식 요소 중에 선택자에 해당하는 요소 중 숫자번째 요소를 선택함. */
+.container p:nth-of-type(2) {
+  background-color: bisque;
+}

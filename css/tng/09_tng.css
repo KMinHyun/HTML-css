@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  margin: 2px auto 20px;
+  border: 1px solid black;  
+  background-color: white;
+  width: 700px;
+  height: 800px;
+  position: relative;
+}
+
+h1 {
+  margin: 20px 40px 10px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #03441e;
+}
+
+.h1-title {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px 20px 20px;
+  padding: 20px;
+  text-align: center;
+}
+.h2-title {
+  font-weight: bold;
+}
+
+.mainSubtitleOne, .main-subtitle-two {
+  padding: 20px;
+}
+
+.main-subtitle-text {
+  color: red;
+  font-weight: 500;
+}
+
+.mainSubtitleOneRecruit {
+  padding: 20px 40px 0px;
+}
+
+.main-subtitle-two-advantage {
+  padding: 20px 40px 0px;
+}
+
+footer {
+  position: relative;
+}
+
+.bgBottomImg {
+  border: 1px solid white;
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-image: url(../../img/images.webp);
+  background-size: cover;
+}

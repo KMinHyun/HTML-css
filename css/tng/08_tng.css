@@ -16,7 +16,7 @@
   width: 150px;
   height: 150px;
 }
-
+/* div로 묶어서 div에다 border 속성을 주면 됐음. */
 .positionBaseBox {
   margin: 40px;
   position: relative;
