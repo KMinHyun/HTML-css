@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  margin: 50px 30vw;
+}
+.container {
+  padding: 0px 20px 10px;
+  width: 500px;
+  height: 400px;
+  background-image: url(../../img/logo-mysql-170x115.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  line-height: 40px;
+}
+.personal-info {
+  list-style-type: none;
+}
+legend {
+  color: rgb(226, 43, 226);
+  font-size: 30px;
+  font-weight: bold;
+}
+input {
+  border: 2px solid black;
+  outline: none;
+}
+input:focus {
+  border: 3px solid red;
+}
+input:checked + label{
+  color: red;
+}
+textarea {
+  outline: none;
+  margin: 12px 10px 5px;
+  float: left;
+}
+textarea:focus {
+  border: 3px solid red;
+}
+.request {
+  float: left;
+}
+.request::before {
+  content: '*';
+  color: rgba(255, 0, 0, 0) ;
+}
+button {
+  margin: 10px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+button:hover {
+  
+}
+.click-content {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 300px;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+.required-sign::before {
+  content: '*';
+  color: red;
+}

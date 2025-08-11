@@ -1,0 +1,11 @@
+/* 가상 요소 : 콜론을 2개 씀. 빈 공간(박스가 없는 공간)에 스타일을 주고 싶을 때 사용. */
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+.required-sign::after {
+  content: '*';
+  color: red;
+}
+/* ::before는 앞에, ::after는 뒤에. */
+/* 가상 요소는 기본적으로 넣고자 하는 해당 요소의 자식 요소로 들어감. */

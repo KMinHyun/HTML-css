@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+/* .fieldset-bg-Img {
+  position: relative;
+}
+.fieldset-bg-Img::after {
+  content: "";
+  z-index:01;
+  width: 500px;
+  background-image: url(../../img/logo-mysql-170x115.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ } */
+/* 배경을 투명하게 하기 위해선 가상 요소를 써서 포지션을 이용함. */
+.fieldset-bg-Img {
+  width: 500px;
+  background-image: url(../../img/logo-mysql-170x115.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+.legend-title {
+  color: magenta;
+  font-size: 20px;
+  font-weight: 20p;
+}
+.required-sign::before{
+  content: '*';
+  color: red;
+}
+.input-box {
+  margin-bottom: 10px;
+}
+.txa-request-memo {
+  width: 200px;
+  height: 150px;
+}
+label {
+  vertical-align: top;
+}
+input, textarea {
+  background-color: initlal;
+  /* transparent를 쓰면 배경을 투명하게 할 수 있음. */
+}
+.focus-border:focus {
+  border: 3px solid red;
+  outline: none;
+}
+.chk-color:checked + label {
+  color: red;
+}
+.btn-submit {
+  position: relative
+}
+.btn-submit:hover::after {
+  content: '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 60px;
+}
