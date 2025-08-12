@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #7fffd4;
+}
+
+@media (max-width: 500px) {
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    div {
+      background-color: black;
+  }
+}
+/* screen은 웹 화면을 얘기하며 생략 가능. */
+/* max-width : xxx = xxx 크기까지는 { }의 코드를 적용시키겠다는 뜻. */
+
+
