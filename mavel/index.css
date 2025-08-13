@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* sidebar 영역 */
+.sidebar {
+  background-color: #ff3d49;
+}
+
+.sidebar a {
+  color: whitesmoke;
+}
+
+h1 {
+  margin: 3rem auto;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* side-menu 드랍박스 없는 버전 */
+
+.side-menu {
+  margin-bottom: 3rem;
+}
+
+.side-menu > li {
+  padding: 0.2rem 1rem;
+}
+
+.side-menu > li > a {
+  display: inline-block;
+  width: 100%;
+}
+/* a태그를 부모영역까지 확장시킴. */
+
+.side-menu > li:nth-child(1) {
+  padding: 0.5rem 1rem;
+  background-color: #ff5662;
+  font-weight: bold;
+}
+
+.side-menu > li:not(:nth-child(1)):hover {
+  background-color: black;
+  transition: all 1.5s;
+  /* 간단한 효과를 줄 때는 프레임 없이 주고 싶을 때 transition만 사용. */
+}
+
+/* side-menu 드롭박스 있는 버전 */
+
+.side-menu {
+  margin-bottom: 3rem;
+  color: whitesmoke;
+}
+
+.side-menu > h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff5662;
+  padding: 0.5rem 1rem;
+}
+
+.menu-dropbox {
+  display: none;
+}
+
+.side-menu > h2 > label {
+  display: inline-block;
+  width: 100%;
+}
+
+#menu-dropbox-01-flg {
+  display: none;
+}
+
+#menu-dropbox-01-flg:checked + .menu-dropbox {
+  display: block;
+}
+
+.menu-dropbox > li {
+  padding: 0.2rem 1rem;
+}
+
+.menu-dropbox > li:hover {
+  background-color: #000;
+  transition: all 1.5s;
+}
+
+.menu-dropbox > li > a {
+  display: inline-block;
+  width: 100%;
+}
+
+/* main 영역 */
+.main {
+  background-color: #e1e1e1;
+}
+
+.search-bar {
+  height: 50px;
+}
+
+.search-bar > form {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 1rem;
+}
+
+#search {
+  width: 80%;
+  height: 30px;
+}
+
+.btn-search-submit {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #7f2caf;
+  line-height: 30px;
+  font-weight: 900;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.signboard {
+  height: 300px;
+  background-image: url('./img/main_title.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* 자식 요소들 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signboard-title {
+  font-size: 3rem;
+  color: white;
+}
+
+.main-content {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+}
+
+.card > h3 {
+  margin: 1rem 0;
+}
+.card-img {
+  padding-top: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 기타 */
+.btn-move-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: whitesmoke;
+  font-weight: bold;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
