@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 여기서부터 폰트 스타일 */
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sansation-regular {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sansation-light-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sansation-regular-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sansation-bold-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* 여기까지 폰트 스타일 */
+
+[style] {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+}
+
+a:hover {
+  transition: all 1.5s;
+}
+
+/* 여기서부터 header */
+header {
+  padding: 100px 50px;
+  background-image: url(./img/img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.header-title-phrase-content {
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700px;
+  font-size: 20px;
+}
+
+.btn-browse {
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(218, 165, 32);
+  color: white;
+  font-weight: 700px;
+  font-size: 20px;
+}
+
+.btn-browse:hover {
+  background-color: rgb(218, 165, 32, 0.5);
+  transition: all 1.5s;
+}
+
+/* 여기서부터 main */
+.main-contents {
+  margin: 30px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #b1a8a875;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  width: 100%;
+  /* 자식 요소 정렬 */
+  display: flex;
+  align-items: end;
+}
+
+h2 {
+  margin-top: 70%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.623);
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+
+  /* 글자 정렬 */
+  display: flex;
+  align-items: center;
+}
+
+.main-card-content {
+  width: 100%;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.main-contents-btn {
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: goldenrod;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main-contents-btn:hover {
+  background-color: rgba(218, 162, 32, 0.5);
+  transition: all 1.5s;
+}
+
+/* 여기서부터 footer */
+.date-address {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-address-content {
+  color: white;
+  font-size: 12px;
+}
