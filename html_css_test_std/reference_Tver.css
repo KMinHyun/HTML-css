@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* common */
+button {
+  background-color: #daa520;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.5rem;
+  /* width와 height로 박스 크기를 조절할 수도 있지만 padding을 줘서 조절할 수도 있음.
+    단, font-size가 커지거나 작아지면 박스 크기가 그에 맞춰지기 때문에 사용할 때 주의 필요. */
+  color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 1.5s;
+}
+
+/* header */
+header {
+  background-image: url(./img/img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+header > h1 {
+  margin: 80px 0;
+  font-size: 4rem;
+}
+
+.header-info > p {
+  margin: 30px 0;
+  font-size: 1.5rem;
+}
+
+/* main */
+main {
+  margin-bottom: 70px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.card-img {
+  padding-top: 70%;
+  /* width의 70%를 가져감. */
+  background-repeat: norepeat;
+  background-size: cover;
+}
+
+.card-img-title {
+  padding: 15px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 900px;
+}
+
+.card > a > button {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100vw;
+  background-color: #242424;
+  color: white;
+  text-align: center;
+}
